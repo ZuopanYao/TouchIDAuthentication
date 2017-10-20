@@ -16,11 +16,12 @@ class DetailViewController: UIViewController {
     var account: String!
     
     lazy var datas: [String] = {
-       
+        
         return [self.account, "GG", "20"]
     }()
     
     lazy var cellTitle: [String] = {
+        
         return ["账号", "性别", "年龄"]
     }()
     
@@ -47,6 +48,7 @@ class DetailViewController: UIViewController {
                     
                     sender.setOn(false, animated: true)
                 }
+                
                 return
             }
             
@@ -73,6 +75,7 @@ class DetailViewController: UIViewController {
                     
                     sender.setOn(true, animated: true)
                 }
+                
                 return
             }
             
@@ -103,6 +106,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                 
                 touchIDSwitch.isOn = true
             }else {
+                
                 touchIDSwitch.isOn = false
             }
             
